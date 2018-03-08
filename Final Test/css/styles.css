@@ -1,0 +1,76 @@
+#header{
+  width: 1333px;
+  height: 250px;
+}
+
+#menu{
+  width: 1333px;
+  height: 50px;
+  background-color: white;
+  border-bottom: rgb(65, 201, 160) solid 2px;
+}
+
+#left{
+  width: 250px;
+  height: 435px;
+  background-color: rgb(179, 190, 159);
+  float: left;
+  border-right: 2px;
+  }
+
+#content{
+  width: 833px;
+  height: 435px;
+  background-color: ;
+  float: left;
+}
+
+#right{
+  width: 250px;
+  height: 435px;
+  background-color: rgb(179, 190, 159);
+  float: left;
+  border-left: 2px;
+}
+
+#bottom{
+  width: 1333px;
+  height: 40px;
+  background-color: white;
+  clear: both;
+}
+
+#pictureTop{
+  width: 1333px;
+  height: 250px;
+}
+
+#wordMenu{
+  font-size: 1.1em;
+  color: black;
+  text-align: center;
+}
+
+#WordContent{
+  text-align: center;
+  font-size: 2em;
+  font-family: sans-serif;
+}
+
+#paddingOfMenu{
+  padding-left: 450px;
+  padding-bottom: 3px;
+}
+
+#form{
+  padding-left: 350px;
+  border:black solid 5px;
+  border-spacing: 2px;
+  border-width: 5px;
+}
+
+#form2{
+  font-size: 1em;
+  padding-top: 10px;
+  text-align: center;
+}
