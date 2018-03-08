@@ -67,6 +67,7 @@
   border:black solid 5px;
   border-spacing: 2px;
   border-width: 5px;
+  border-radius: 30px;
 }
 
 #form2{
