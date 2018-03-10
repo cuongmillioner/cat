@@ -1,0 +1,152 @@
+#header{
+  width: 1333px;
+  height: 250px;
+  background-color: blue;
+}
+
+#menu{
+  margin: 0 auto;
+  width: 100%;
+  height: 71px;
+  background-color: rgb(191, 198, 191);
+  border-bottom: 10px solid black;
+  text-align: center;
+}
+
+#left{
+  width: 250px;
+  height:600px;
+  background-color:rgb(179, 190, 159);
+  float: left;
+}
+
+#content{
+  width: 833px;
+  height:600px;
+  background-color: white;
+  float: left;
+}
+
+#right{
+  width: 250px;
+  height:600px;
+  background-color:rgb(179, 190, 159);
+  float:left;
+}
+
+#bottom{
+  width: 1333px;
+  height: 40px;
+  background-color: rgb(59, 74, 62);
+  clear: both;
+}
+
+#pictureTop{
+  width: 1333px;
+  height: 250px;
+}
+
+#layout{
+  text-align: center;
+  font-size: 2em;
+  font-family: sans-serif;
+}
+
+#form{
+  padding-left: 250px;
+}
+
+#layoutMenu{
+  font-family: monospace;
+  font-size: 1.3em;
+  padding-top: 10px;
+  padding-left: 350px;
+  word-spacing: 2em;
+}
+
+body{
+  color: rgb(53, 56, 50);
+  font-size: 1.4em;
+  font-family: sans-serif;
+}
+.nav-main .logo{
+  height: 40px;
+  float: left;
+  font-size: 1.7em;
+  margin-top: 7px;
+  margin-left: 24%;
+  padding-right: 10px;
+}
+
+.nav-main >ul{
+  margin: 0;
+  padding:0;
+  list-style-type:none;
+}
+
+.nav-main>ul>li{
+  float: left;
+}
+
+.nav-item{
+  display: inline-block;
+  padding: 15px 20px;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: rgb(63, 65, 52);
+}
+
+.nav-item:hover{
+  background-color: rgb(222, 232, 219);
+}
+
+.nav-content{
+  position: absolute;
+  top: 330px;
+  overflow: hidden;
+  background-color: rgb(191, 198, 191);
+  max-height: 0;
+}
+
+.nav-content a{
+  color: rgb(53, 56, 50);
+  text-decoration: none;
+  float: left;
+}
+
+.nav-content a:hover{
+  text-decoration:none;
+  background-color: rgb(222, 232, 219);
+}
+
+.nav-sub{
+  padding: 20px;
+}
+
+.nav-sub ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav-sub ul li a{
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.nav-item:focus{
+  background-color: rgb(222, 232, 219);
+}
+
+.nav-item:focus ~ .nav-content{
+  max-height: 400px;
+  -webkit-transition: max-height 0.4s ease-in;
+  -moz-transition: max-height 0.4s ease-in;
+  transition: max-height 0.4s ease-in;
+}
+
+#logo{
+  width: 60px;
+  height: 60px;
+}
