@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dog</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/dog.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/SlidesPic.css">
+    <link rel="stylesheet" href="css/Menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/slidesPic.js"></script>
+  </head>
+  <body>
+    <!--Menu-->
+    <div id="menu">
+      <nav id="fixNav">
+         <ul>
+             <li><a href="Home.html">Home</a></li>
+             <li><a href="#">Adopt</a>
+                <ul>
+                   <li><a href="Cat.html">Cat</a></li>
+                   <li><a href="Dog.html">Dog</a></li>
+                </ul>
+             </li>
+             <li><a href="PersonalFundrasing.html">Volunteer</a></li>
+             <li><a href="#">Story</a></li>
+             <li><a href="Login.html">Login</a></li>
+         </ul>
+      </nav>
+    </div>
+    <!--Slides img-->
+    <div id="top">
+      <div id="container">
+        <img src="pictures/Img1.jpg" class="slides"/>
+        <img src="pictures/Img2.jpg" class="slides"/>
+        <img src="pictures/Img3.png" class="slides"/>
+        <img src="pictures/Img4.jpg" class="slides"/>
+        <img src="pictures/Img5.jpg" class="slides"/>
+        <button class="btn" onclick="plusIndex(-1)" id="btn-pre">&#10094;</button>
+        <button class="btn" onclick="plusIndex(1)" id="btn-next">&#10095;</button>
+      </div>
+    </div>
+    <!-- phan 2 anh thanh cong cu -->
+ 	<div class="container-fluid" id="space">
+ 	    <div class="row">
+ 			<div class="col-lg-3">
+ 				<div id="catdog">
+ 					<a href="Dog.html"><h4>Dogs</h4></a>
+          <a href="Cat.html"><h4>Cats</h4></a>
+ 				</div>
+ 			</div>
+ 				<div id="divImg">
+ 				<div class="container-fluid">
+          <blockquote><h2>Dogs for adoption</h2>
+ 			<div class="col-lg-9">
+ 			  <div class="row">
+ 				<div class="col-lg-3">
+ 				   <div id="dog"><img src="imagesDog/1.jpg" alt=""><h4>Minerva</h4><span>2 years,Female</span></div>
+ 				   <div id="dog"><img src="imagesDog/2.jpg" alt="">
+ 				   <h4>Changa</h4> <span>7 years,Female</span></div>
+ 				   <div id="dog"><img src="imagesDog/3.jpg" alt=""><h4>Sasha</h4><span>1 years,Female</span></div>
+ 				   <div id="dog"><img src="imagesDog/4.jpg" alt=""><h4>Bart</h4><span>6 years,Male</span></div>
+        </div>
+ 				<div class="col-lg-3">
+ 					<div id="dog"><img src="imagesDog/5.jpg" alt=""><h4>Candy</h4><span>12 years,Female</span></div>
+ 					<div id="dog"><img src="imagesDog/6.jpg" alt=""><h4>Ginger</h4><span>2 years,Female</span></div>
+ 					<div id="dog"><img src="imagesDog/7.jpg" alt=""><h4>Everett</h4><span>6 months,Male</span></div>
+ 					<div id="dog"><img src="imagesDog/8.jpg" alt=""><h4>Olivia</h4><span>2.5years,female</span></div>
+ 					</div>
+ 				<div class="col-lg-3">
+ 					<div id="dog"><img src="imagesDog/9.jpg" alt=""><h4>Doodle</h4><span>1 year,Male</span></div>
+ 					<div id="dog"><img src="imagesDog/10.jpg" alt=""><h4>Alai</h4><span>2 years,Female</span></div>
+ 					<div id="dog"><img src="imagesDog/11.jpg" alt=""><h4>January</h4><span>2 years,Female</span></div>
+ 					<div id="dog"><img src="imagesDog/12.jpg" alt=""><h4>Moe</h4><span>9 months,Male</span></div>
+ 				</div>
+ 				<div class="col-lg-3">
+ 					<div id="dog"><img src="imagesDog/13.jpg" alt=""><h4>Cody</h4><span>7 years,Male</span></div>
+ 					<div id="dog"><img src="imagesDog/14.jpg" alt=""><h4>OC</h4><span>4 years,Male</span></div>
+ 					<div id="dog"><img src="imagesDog/15.jpg" alt=""><h4>Jake</h4><span>2 years,Male</span></div>
+ 					<div id="dog"><img src="imagesDog/16.jpg" alt=""><h4>Holden</h4><span>3 months,Male</span></div>
+ 					</div>
+ 				<!--phan 2 anh -->
+ 				</div>
+ 				</div>
+        </blockquote>
+ 				</div>
+ 				</div>
+ 				</div>
+ 			</div>
+      <div id="footer">
+        <br>
+        <p id="fontSize"><b>&#9956; 2018 Animal Haven</b> <br>
+          200 Centre Street	, New York	NY 10013	212.274.8511 <br>
+          Site design by Blackbaud
+        </p>
+      </div>
+  </body>
+<script>
+  //Button Slides
+  var index = 1;
+
+  function plusIndex(n) {
+  index = index + n;
+  showImage(index);
+  }
+
+  showImage(1);
+
+  function showImage(n){
+  var i;
+  var x = document.getElementsByClassName("slides");
+  if (n > x.length) {index = 1};
+  if (n < 1) {index = x.length};
+  for (var i = 0; i < x.length; i++)
+  {
+    x[i].style.display = "none";
+  }
+  x[index - 1].style.display = "block";
+  }
+
+  //Slides auto
+  autoSlide();
+  function autoSlide() {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    for (var i = 0; i < x.length; i++)
+      {
+        x[i].style.display = "none";
+      }
+    if (index > x.length) {index = 1}
+    x[index - 1].style.display = "block";
+    index++;
+    setTimeout(autoSlide,2000);
+  }
+</script>
+</html>
