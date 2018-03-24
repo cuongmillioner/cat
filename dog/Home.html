@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <!-- BUG: Library -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- BUG: Extra -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/SlidesPic.css">
+    <link rel="stylesheet" href="css/Menu.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/slidesPic.js"></script>
+  </head>
+  <body>
+    <!--Menu-->
+    <div id="menu" >
+        <nav id="fixNav" style="  opacity: 0.4">
+     
+         <ul>
+             <li><a href="Home.html">Home</a></li>
+             <li><a href="">Adopt</a>
+                <ul>
+                   <li><a href="">Cat</a></li>
+                   <li><a href="Dog.html">Dog</a></li>
+                </ul>
+             </li>
+             <li><a href="PersonalFundrasing.html">Volunteer</a></li>
+             <li><a href="">Support</a></li>
+             <li><a href="Login.html">Login</a></li>
+         </ul>
+      </nav>
+    </div>
+    <!--Slides img-->
+    <div id="container">
+      <img src="images/Img1.jpg" class="slides"/>
+      <img src="images/Img2.jpg" class="slides"/>
+      <img src="images/Img3.png" class="slides"/>
+      <img src="images/Img4.jpg" class="slides"/>
+      <img src="images/Img5.jpg" class="slides"/>
+      <button class="btn" onclick="plusIndex(-1)" id="btn-pre">&#10094;</button>
+      <button class="btn" onclick="plusIndex(1)" id="btn-next">&#10095;</button>
+    </div>
+    <div class="col-sm-12" style="background-color:#333;">.</div>
+    <!-- BUG: Content -->
+    <div class="container" id="content">
+      <img src="images/Logo.png"/ id="logo">
+      <p>We find homes for abandoned cats and dogs in New York City and throughout the Tri-State area, and<br>
+        provide behavior intervention when needed to improve chances of adoption.</p>
+      <h4>HELP US SAVE ANIMAL! JOIN US:</h4><br>
+      <a href="Login.html" id="login">Login</a>
+      <div id="content2">
+        <h2>What's happening</h2>
+        <div id="Index1">
+          <a href="PersonalFundrasing.html" id="">
+            <img src="images/contentHome1.png" alt="" style="width:300px">
+            <caption>Personal fundrasing</caption>
+          </a>
+        </div>
+        <div id="Index2">
+          <a href="benefit.html" id="">
+            <img src="images/contentHome2.jpg" alt="" style="width:300px">
+            <caption>2018 Annual Benefit</caption>
+          </a>
+        </div>
+        <div id="Index3">
+          <a href="Community.html" id="">
+            <img src="images/contentHome3.png" alt="" style="width:300px">
+            <caption>Community outreach</caption>
+          </a>
+        </div>
+        <div id="Index4">
+          <a href="ButterCup.html" id="">
+            <img src="images/contentHome4.jpg" alt="" style="width:300px">
+            <caption>Featured Pet - Buttercup</caption>
+          </a>
+        </div>
+      </div>
+      <div id="content3">
+        <h3>&#9898; &#9898; &#9898;</h3>
+        <div id="letter">
+          <div>
+            <p>“I wanted to send a bit of an update on Barker, now Stiles.<br>
+               I can’t believe it’s been a year since I brought him home <br>
+               from Animal Haven! I want to thank you all for taking such <br>
+               great care of him, he is such a great dog!<br><br><br>
+                I can’t wait for the years ahead and all the cuddles yet to <br>
+                come!! He’s really good at cuddling. And stealing your seat.” <br>
+              Jacquice and Stiles</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+   <div>
+     <footer id="bb-footer" style="">
+
+
+
+</style>
+<div class="">
+  <div class="footer">
+    <div style="float: left;text-align: left;margin-left: :500px; margin-bottom: 500px;">
+      <div class="" style="margin-left:50px;font-size: 18px;font-weight:900;">© 2018 
+        <a style="color: #fff">Animal Haven</a>
+      </div>
+      <span class="address" style=" margin-left:50px;
+      ">200 Centre Street</span>              
+      <span class="city">,&nbsp;New York</span>       
+      <span class="zip">NY 10013</span>       
+      <span class="phone">212.274.8511</span>   
+      <div class="dv2">Site design by Blackbaud</div>           
+
+    </div>
+  </div>
+</div>
+<!--footer right-->
+<style type="text/css">
+  nav a img{
+    margin-left: 5px
+  }
+
+</style>
+<nav style="float: right; margin-top: 20px;margin-right: 40px;margin-top: 50px">
+  <ul style="">
+    
+      <a href=""><img src="https://ws.sharethis.com/images/2017/facebook_32.png"></a>
+  
+  
+      <a href=""><img src="https://ws.sharethis.com/images/2017/twitter_32.png"></a>
+    
+  
+      <a href=""><img src="https://ws.sharethis.com/images/2017/twitter_32.png"></a>
+  
+
+      <a href=""><img src="https://ws.sharethis.com/images/2017/instagram_32.png"></a>
+
+  </ul>     
+</nav>
+</footer>
+ </div>
+
+</body>
+<script>
+  //Button Slides
+  var index = 1;
+
+  function plusIndex(n) {
+  index = index + n;
+  showImage(index);
+  }
+
+  showImage(1);
+
+  function showImage(n){
+  var i;
+  var x = document.getElementsByClassName("slides");
+  if (n > x.length) {index = 1};
+  if (n < 1) {index = x.length};
+  for (var i = 0; i < x.length; i++)
+  {
+    x[i].style.display = "none";
+  }
+  x[index - 1].style.display = "block";
+  }
+
+  //Slides auto
+  autoSlide();
+  function autoSlide() {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    for (var i = 0; i < x.length; i++)
+      {
+        x[i].style.display = "none";
+      }
+    if (index > x.length) {index = 1}
+    x[index - 1].style.display = "block";
+    index++;
+    setTimeout(autoSlide,2000);
+  }
+</script>
+</html>
