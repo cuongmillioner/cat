@@ -4,9 +4,8 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 440px;
+  height: 430px;
   float: left;
-  border-bottom: 50px solid #333;
   margin-bottom: 50px;
 }
 #content{
@@ -27,58 +26,9 @@
   float: left;
 }
 
-#Index1{
-  width: 20%;
-  height: 300px;
-  background: pink;
-  float: left;
-}
-
-#Index2{
-  width: 20%;
-  height: 300px;
-  background: pink;
-  float: left;
-  margin-left: 80px;
-}
-
-#Index3{
-  width: 20%;
-  height: 300px;
-  background: pink;
-  float: left;
-  margin-left: 80px;
-}
-
-#Index4{
-  width: 20%;
-  height: 300px;
-  background: pink;
-  float: left;
-  margin-left: 80px;
-}
-
-#content3{
-  box-shadow: 0px 0px 20px 0px;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  margin-top: 50px;
-  float: left;
-  width: 100%;
-  height: 350px;
-  background: #333;
-}
-
-#letter{
-  border-radius: 40px;
-  position: absolute;
-  width: 800px;
-  height: 250px;
-  background: white;
-  margin-left: 290px;
-}
+.bg{background: url('pictures/Background.jpg') no-repeat; width: 100%; height: 100vh;}
+.letter-container{border: 0px solid #fff; padding: 30px 60px; margin-top: 25vh;
+box-shadow: 0px 0px 40px 10px;}
 
 #footer{
   margin-top: 50px;
@@ -94,4 +44,7 @@
   color: rgb(166, 174, 187);
 }
 
+#content3{
+  top: 100px;
+}
 /* BUG: Dog */
