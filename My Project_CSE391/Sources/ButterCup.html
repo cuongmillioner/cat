@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <!-- Library -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Extra -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/SlidesPic.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/slidesPic.js"></script>
+  </head>
+  <body>
+    <!--Menu-->
+    <div id="menu">
+      <nav id="fixNav" style="opacity: 0.4">
+         <ul>
+             <li><a href="Home.html">Home</a></li>
+             <li><a href="">Adopt</a>
+                <ul>
+                   <li><a href="cat.html">Cat</a></li>
+                   <li><a href="dog.html">Dog</a></li>
+                </ul>
+             </li>
+             <li><a href="volunteer.html">Volunteer</a></li>
+             <li><a href="support.html">Support</a></li>
+             <li><a href="Login.html">Login</a></li>
+         </ul>
+      </nav>
+    </div>
+
+    <!--Slides img-->
+    <div id="container">
+      <img src="images/Img1.jpg" class="slides"/>
+      <img src="images/Img2.jpg" class="slides"/>
+      <img src="images/Img3.png" class="slides"/>
+      <img src="images/Img4.jpg" class="slides"/>
+      <img src="images/Img5.jpg" class="slides"/>
+      <button class="btn" onclick="plusIndex(-1)" id="btn-pre">&#10094;</button>
+      <button class="btn" onclick="plusIndex(1)" id="btn-next">&#10095;</button>
+    </div>
+    <div class="col-sm-12" style="background-color:#333;">.</div>
+    <div class="col-sm-12" style="background-color:#333;">.</div>
+    <div class="container">
+      <h2>Buttercup</h2>
+      <img src="images/Buttercup.jpg" alt="" class="img-circle">
+      <p id="sizeWord"><b>Age: </b>18</p>
+      <p id="sizeWord"><b>Sex: </b>Female</p>
+      <p id="sizeWord"><b>Weight: </b>13lbs</p>
+      <p id="sizeWord">My name is Buttercup and I’m as delightful as a spring flower! I’ve got a bubbly, happy spirit and I
+        enjoy being around both dogs & people. My foster has cats, and I’m cool with them, too! I live with diabetes, but it doesn’t define me.
+        I even sit like an angel when she gives me my insulin shots. Please make an appointment to meet me – I can’t wait to meet you!</p>
+    </div>
+  </body>
+  <script>
+    //Button Slides
+    var index = 1;
+
+    function plusIndex(n) {
+    index = index + n;
+    showImage(index);
+    }
+
+    showImage(1);
+
+    function showImage(n){
+    var i;
+    var x = document.getElementsByClassName("slides");
+    if (n > x.length) {index = 1};
+    if (n < 1) {index = x.length};
+    for (var i = 0; i < x.length; i++)
+    {
+      x[i].style.display = "none";
+    }
+    x[index - 1].style.display = "block";
+    }
+
+    //Slides auto
+    autoSlide();
+    function autoSlide() {
+      var i;
+      var x = document.getElementsByClassName("slides");
+      for (var i = 0; i < x.length; i++)
+        {
+          x[i].style.display = "none";
+        }
+      if (index > x.length) {index = 1}
+      x[index - 1].style.display = "block";
+      index++;
+      setTimeout(autoSlide,2000);
+    }
+  </script>
+  </html>
