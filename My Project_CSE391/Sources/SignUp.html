@@ -3,13 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Sign Up</title>
-    <!-- Library -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- Extra  -->
     <link rel="stylesheet" href="css/dog.css">
     <link rel="stylesheet" href="css/layout2.css">
     <link rel="stylesheet" href="css/SlidesPic.css">
@@ -18,10 +16,9 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/style1.css">
     <script src="js/slidesPic.js"></script>
-    <script scr="js/Login.js"></script>
+    <script src="js/Login.js"></script>
   </head>
   <body>
-
     <!--Menu-->
     <div id="menu">
       <nav id="fixNav" style="opacity: 0.6">
@@ -36,37 +33,31 @@
              <li><a href="volunteer.html">Volunteer</a></li>
              <li><a href="support.html">Support</a></li>
              <li><a href="Login.html">Login</a></li>
-             <li><a href="upload.html">Upload</a></li>
          </ul>
       </nav>
     </div>
 
-    <!-- Form to sign up -->
+    <!-- form to sign in -->
     <div class="container-fluid HomeScreen">
       <div class="row">
         <div class="col-md-4 col-md-4 col-xs-12"></div>
         <div class="col-md-4 col-md-4 col-xs-12">
           <!-- form start -->
-          <form class="form-container">
-            <h2>Sign up</h2>
+          <form class="form-container" method="post" action="abcxyz.html" onsubmit="return testForm();" name="signin">
+            <h2>Login</h2>
             <div class="form-group">
-              <label for="Email">Your email</label>
-              <input type="email" class="form-control" id="Email" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <label for="Password">Your password</label>
-              <input type="password" class="form-control" id="Password" placeholder="Password">
+              <label for="Email">Email</label>
+              <input type="email" class="form-control" id="Email" placeholder="Email" name="email">
             </div>
             <div class="form-group">
-              <label for="Email">Username</label>
-              <input type="email" class="form-control" id="Email" placeholder="Choose a name you want sign up">
+              <label for="Password">Password</label>
+              <input type="password" class="form-control" id="Password" placeholder="Password" name="password">
             </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"> Remember me
-              </label>
+            <div class="form-group">
+              <label for="">Username</label>
+              <input type="text" class="form-control" placeholder="Sign your name" name="username">
             </div>
-            <button type="submit" class="btn btn-success btn-block" id="btn-login">Submit</button>
+            <button type="submit" class="btn btn-success btn-block">Submit</button>
           </form>
           <!-- form end -->
         </div>
