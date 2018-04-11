@@ -1,4 +1,4 @@
-/xử lý khi có sự kiện click
+//xử lý khi có sự kiện click
     $('#upload').on('click', function() {
         //Lấy ra files
         var file_data = $('#file').prop('files')[0];
@@ -16,7 +16,7 @@
             //sử dụng ajax post
             $.ajax({
                 url: 'upload.php', // gửi đến file upload.php 
-                dataType: 'images',
+                dataType: 'text',
                 cache: false,
                 contentType: false,
                 processData: false,
@@ -33,4 +33,4 @@
         }
         return false;
     });
-    </script>
+    
